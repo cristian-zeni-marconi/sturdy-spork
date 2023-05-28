@@ -1,44 +1,38 @@
-TIME;2019;;2022;
-GEO (Labels);;;;
-European Union - 27 countries (from 2020);76,7;;82,1;
-European Union - 28 countries (2013-2020);77,4;;:;
-Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023);77,9;;82,6;
-Belgium;:;u;:;u
-Bulgaria;68,6;;79,4;
-Czechia;87,3;;90,1;
-Denmark;81,7;;86,1;
-Germany (until 1990 former territory of the FRG);84,5;;88,6;
-Estonia;60,4;;66,8;
-Ireland;87,5;;88,0;b
-Greece;:;u;:;u
-Spain;67,6;;76,1;
-France;65,7;;75,4;b
-Croatia;64,5;;69,8;
-Italy;84,3;;84,3;
-Cyprus;58,7;;81,8;
-Latvia;86,6;;78,0;
-Lithuania;67,7;;73,8;
-Luxembourg;83,9;;82,1;
-Hungary;70,0;;63,9;
-Malta;:;u;:;u
-Netherlands;73,0;;81,8;
-Austria;67,3;;78,8;
-Poland;75,7;;82,5;
-Portugal;83,9;;85,4;
-Romania;56,6;;81,5;
-Slovenia;58,1;;72,4;
-Slovakia;78,6;;76,6;
-Finland;91,1;;92,1;
-Sweden;72,9;;74,1;
-Norway;71,9;;79,6;
-United Kingdom;85,8;;:;
-Montenegro;52,6;;57,1;
-Albania;:;;:;u
-Serbia;67,9;;74,2;
-Turkiye;:;;64,2;
-Bosnia and Herzegovina;62,8;;61,9;
-Special value;;;;
-:;not available;;;
-Available flags:;;;;
-b;break in time series;;;
-u;low reliability;;;
+TIME;2019;2022
+European Union - 27 countries (from 2020);76.7;82.1
+European Union - 28 countries (2013-2020);77.4;
+Euro area (EA11-1999. EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023);77.9;82.6
+Belgium;;
+Bulgaria;68.6;79.4
+Czechia;87.3;90.1
+Denmark;81.7;86.1
+Germany (until 1990 former territory of the FRG);84.5;88.6
+Estonia;60.4;66.8
+Ireland;87.5;88.0
+Greece;;
+Spain;67.6;76.1
+France;65.7;75.4
+Croatia;64.5;69.8
+Italy;84.3;84.3
+Cyprus;58.7;81.8
+Latvia;86.6;78.0
+Lithuania;67.7;73.8
+Luxembourg;83.9;82.1
+Hungary;70.0;63.9
+Malta;;
+Netherlands;73.0;81.8
+Austria;67.3;78.8
+Poland;75.7;82.5
+Portugal;83.9;85.4
+Romania;56.6;81.5
+Slovenia;58.1;72.4
+Slovakia;78.6;76.6
+Finland;91.1;92.1
+Sweden;72.9;74.1
+Norway;71.9;79.6
+United Kingdom;85.8;
+Montenegro;52.6;57.1
+Albania;;
+Serbia;67.9;74.2
+Turkiye;;64.2
+Bosnia and Herzegovina;62.8;61.9

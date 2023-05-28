@@ -1,30 +1,40 @@
 import pandas as pd
-import numpy as np
-from sklearn.linear_model import LinearRegression
+import matplotlib.pyplot as plt
+from matplotlib.animation import FuncAnimation
 
-
-data = pd.read_csv("C:\Lavoro-Temp\zeni\dataset.csv", sep=";", engine="python")
+data = pd.read_csv("C:/Users/PC/OneDrive/Desktop/GPOI/sturdy-spork/dataset.csv", sep=";", engine="python")
 
 df = pd.DataFrame(data)
 
-X = list(df.iloc[:,0])
-Y1 = list(df.iloc[:,1])
-Y2 = list(df.iloc[:,2])
+numeric_columns = df.columns[1:]
 
-#X_axis = np.arange(len(X))
-#plt.figure(figsize=(20,15))
-#plt.barh(X_axis-0.2, Y1, 0.4, color="orange")
-#plt.barh(X_axis+0.2, Y2, 0.4, color="blue")
-#plt.yticks(X_axis,X)
-#plt.show()
+fig, ax = plt.subplots(figsize=(15, 8.8))
 
-for i in range(len(X)):
-    plt.xlim(0,float(max(Y1)))
-    plt.ylim(0,len(X))
-    plt.figure(figsize=(20,15))
-    plt.barh(list(range(len(X))), Y1, 0.4, color="orange")
-    plt.xticks(X_axis,X)
-    plt.pause(0.001)
-   
+current_frame = 0
+
+colors = ['red', 'green']
+
+def update(frame):
+    ax.clear()
+    country_codes = df['TIME']
+    ax.barh(country_codes, df[numeric_columns[frame]], color=colors[frame % len(colors)])
+    ax.set_yticklabels(country_codes)
+    ax.set_xlabel('Dati')
+    ax.set_title('Security policy: measures, risks and staff awarenes', fontweight='bold', fontsize=16)
+    ax.legend([numeric_columns[frame]], loc='upper right') 
+
+def on_click(event):
+    global current_frame
+    if event.button == 1:  # Click sinistro del mouse
+        if current_frame==0:
+            current_frame=1
+        elif current_frame==1:
+            current_frame=0
+        update(current_frame)
+        plt.draw()
+
+fig.canvas.mpl_connect('button_press_event', on_click)
+
+update(current_frame)
 
 plt.show()
